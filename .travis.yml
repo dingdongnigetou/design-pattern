@@ -12,7 +12,7 @@ compiler:
 addons:
     apt:
         packages:
-            libgtest-dev
+            - libgtest-dev
 
 branches:
     only:
