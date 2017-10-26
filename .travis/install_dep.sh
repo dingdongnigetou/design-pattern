@@ -9,7 +9,7 @@ cd googletest-release-1.8.0
 cd googletest/make/
 make
 ar rcs libgtest.a gtest-all.o
-cp libgtest.a /usr/local/lib/
+sudo cp libgtest.a /lib/
 
 cd $currtent_path
 
