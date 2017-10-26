@@ -21,6 +21,7 @@ branches:
 
 before_script:
     - g++ --version
+    - chmod a+x ./.travis/install_dep.sh
     - .travis/install_dep.sh
 
 script:
