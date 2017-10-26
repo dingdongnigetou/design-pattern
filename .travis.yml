@@ -23,6 +23,7 @@ before_script:
     - g++ --version
       #- chmod a+x ./.travis/install_dep.sh
       #- .travis/install_dep.sh
+    - currtent_path=`pwd`
     - wget https://github.com/google/googletest/archive/release-1.8.0.tar.gz
     - tar -xzv -f release-1.8.0.tar.gz
     - cd googletest-release-1.8.0
@@ -30,6 +31,7 @@ before_script:
     - make
     - ar rcs libgtest.a gtest-all.o
     - sudo cp libgtest.a /lib/
+    - cd $currtent_path
 
 script:
     - make clean
